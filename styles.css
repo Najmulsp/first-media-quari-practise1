@@ -1,0 +1,86 @@
+#container{
+    height: 400px;
+    margin-bottom: 5px;
+}
+.home{
+    width: 100%;
+    height: 100%;
+}
+section{
+    
+}
+#container2{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+.flower1{
+    width: 33%;
+}
+.flower2{
+    width: 33%;
+}
+.flower3{
+    width: 33%;
+    gap: 10px;
+}
+.child1{
+width: 100%;
+}
+.child1 .flower3{
+   width: 100%; 
+}
+.child1 .flower4{
+    width: 100%;
+}
+#container3{
+    width: 100%;
+    gap: 5px;
+    height: 400px;
+    display:flex
+   
+    
+}
+#container3 .child1{
+    width: 33%;
+}
+#container3 .child2{
+    width: 33%;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(2, 1fr);
+    height: 400px;
+   
+}
+#container3 .child2>img{
+    width: 100%;
+    height: 200PX;
+}
+#container3 .child3{
+    width: 33%;
+    height: 400px;
+}
+#container3 .child3>img{
+    width: 100%;
+    height: 400px;
+}
+@media screen and (max-width:576px) {
+     
+    #container2, 
+    #container3 {
+flex-direction:column;
+    }
+    #container3>.child2{
+        grid-template-columns: 1fr; 
+        width: 100%; 
+    }
+    #container2>img{
+        width: 100%;
+    }
+    #container3 .child3{
+        
+        width: 100%;
+    }
+}
